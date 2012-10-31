@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		230194531641994E00099191 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230194521641994E00099191 /* Foundation.framework */; };
+		230194581641994E00099191 /* JVSecurity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 230194571641994E00099191 /* JVSecurity.h */; };
+		2301945A1641994F00099191 /* JVSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 230194591641994E00099191 /* JVSecurity.m */; };
+		230194621641994F00099191 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230194611641994F00099191 /* SenTestingKit.framework */; };
+		230194641641994F00099191 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230194631641994F00099191 /* UIKit.framework */; };
+		230194651641994F00099191 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230194521641994E00099191 /* Foundation.framework */; };
+		230194681641994F00099191 /* libJVSecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2301944F1641994E00099191 /* libJVSecurity.a */; };
+		2301946E1641994F00099191 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2301946C1641994F00099191 /* InfoPlist.strings */; };
+		230194711641994F00099191 /* JVSecurityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 230194701641994F00099191 /* JVSecurityTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		230194661641994F00099191 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 230194461641994E00099191 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2301944E1641994E00099191;
+			remoteInfo = JVSecurity;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2301944D1641994E00099191 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				230194581641994E00099191 /* JVSecurity.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2301944F1641994E00099191 /* libJVSecurity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJVSecurity.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		230194521641994E00099191 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		230194561641994E00099191 /* JVSecurity-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JVSecurity-Prefix.pch"; sourceTree = "<group>"; };
+		230194571641994E00099191 /* JVSecurity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JVSecurity.h; sourceTree = "<group>"; };
+		230194591641994E00099191 /* JVSecurity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JVSecurity.m; sourceTree = "<group>"; };
+		230194601641994F00099191 /* JVSecurityTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JVSecurityTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		230194611641994F00099191 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		230194631641994F00099191 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		2301946B1641994F00099191 /* JVSecurityTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JVSecurityTests-Info.plist"; sourceTree = "<group>"; };
+		2301946D1641994F00099191 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2301946F1641994F00099191 /* JVSecurityTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JVSecurityTests.h; sourceTree = "<group>"; };
+		230194701641994F00099191 /* JVSecurityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JVSecurityTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2301944C1641994E00099191 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				230194531641994E00099191 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2301945C1641994F00099191 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				230194621641994F00099191 /* SenTestingKit.framework in Frameworks */,
+				230194641641994F00099191 /* UIKit.framework in Frameworks */,
+				230194651641994F00099191 /* Foundation.framework in Frameworks */,
+				230194681641994F00099191 /* libJVSecurity.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		230194441641994E00099191 = {
+			isa = PBXGroup;
+			children = (
+				230194541641994E00099191 /* JVSecurity */,
+				230194691641994F00099191 /* JVSecurityTests */,
+				230194511641994E00099191 /* Frameworks */,
+				230194501641994E00099191 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		230194501641994E00099191 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2301944F1641994E00099191 /* libJVSecurity.a */,
+				230194601641994F00099191 /* JVSecurityTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		230194511641994E00099191 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				230194521641994E00099191 /* Foundation.framework */,
+				230194611641994F00099191 /* SenTestingKit.framework */,
+				230194631641994F00099191 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		230194541641994E00099191 /* JVSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				230194571641994E00099191 /* JVSecurity.h */,
+				230194591641994E00099191 /* JVSecurity.m */,
+				230194551641994E00099191 /* Supporting Files */,
+			);
+			path = JVSecurity;
+			sourceTree = "<group>";
+		};
+		230194551641994E00099191 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				230194561641994E00099191 /* JVSecurity-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		230194691641994F00099191 /* JVSecurityTests */ = {
+			isa = PBXGroup;
+			children = (
+				2301946F1641994F00099191 /* JVSecurityTests.h */,
+				230194701641994F00099191 /* JVSecurityTests.m */,
+				2301946A1641994F00099191 /* Supporting Files */,
+			);
+			path = JVSecurityTests;
+			sourceTree = "<group>";
+		};
+		2301946A1641994F00099191 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2301946B1641994F00099191 /* JVSecurityTests-Info.plist */,
+				2301946C1641994F00099191 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2301944E1641994E00099191 /* JVSecurity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 230194741641994F00099191 /* Build configuration list for PBXNativeTarget "JVSecurity" */;
+			buildPhases = (
+				2301944B1641994E00099191 /* Sources */,
+				2301944C1641994E00099191 /* Frameworks */,
+				2301944D1641994E00099191 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JVSecurity;
+			productName = JVSecurity;
+			productReference = 2301944F1641994E00099191 /* libJVSecurity.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2301945F1641994F00099191 /* JVSecurityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 230194771641994F00099191 /* Build configuration list for PBXNativeTarget "JVSecurityTests" */;
+			buildPhases = (
+				2301945B1641994F00099191 /* Sources */,
+				2301945C1641994F00099191 /* Frameworks */,
+				2301945D1641994F00099191 /* Resources */,
+				2301945E1641994F00099191 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				230194671641994F00099191 /* PBXTargetDependency */,
+			);
+			name = JVSecurityTests;
+			productName = JVSecurityTests;
+			productReference = 230194601641994F00099191 /* JVSecurityTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		230194461641994E00099191 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "JV Assets, LLC.";
+			};
+			buildConfigurationList = 230194491641994E00099191 /* Build configuration list for PBXProject "JVSecurity" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 230194441641994E00099191;
+			productRefGroup = 230194501641994E00099191 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2301944E1641994E00099191 /* JVSecurity */,
+				2301945F1641994F00099191 /* JVSecurityTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2301945D1641994F00099191 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2301946E1641994F00099191 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2301945E1641994F00099191 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2301944B1641994E00099191 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2301945A1641994F00099191 /* JVSecurity.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2301945B1641994F00099191 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				230194711641994F00099191 /* JVSecurityTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		230194671641994F00099191 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2301944E1641994E00099191 /* JVSecurity */;
+			targetProxy = 230194661641994F00099191 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2301946C1641994F00099191 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2301946D1641994F00099191 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		230194721641994F00099191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		230194731641994F00099191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		230194751641994F00099191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/JVSecurity.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JVSecurity/JVSecurity-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		230194761641994F00099191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/JVSecurity.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JVSecurity/JVSecurity-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		230194781641994F00099191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JVSecurity/JVSecurity-Prefix.pch";
+				INFOPLIST_FILE = "JVSecurityTests/JVSecurityTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		230194791641994F00099191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JVSecurity/JVSecurity-Prefix.pch";
+				INFOPLIST_FILE = "JVSecurityTests/JVSecurityTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		230194491641994E00099191 /* Build configuration list for PBXProject "JVSecurity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				230194721641994F00099191 /* Debug */,
+				230194731641994F00099191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		230194741641994F00099191 /* Build configuration list for PBXNativeTarget "JVSecurity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				230194751641994F00099191 /* Debug */,
+				230194761641994F00099191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		230194771641994F00099191 /* Build configuration list for PBXNativeTarget "JVSecurityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				230194781641994F00099191 /* Debug */,
+				230194791641994F00099191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 230194461641994E00099191 /* Project object */;
+}

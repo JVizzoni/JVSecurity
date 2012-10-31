@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'JVSecurity' target in the 'JVSecurity' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
