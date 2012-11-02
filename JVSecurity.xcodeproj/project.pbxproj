@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		230194531641994E00099191 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230194521641994E00099191 /* Foundation.framework */; };
 		230194581641994E00099191 /* JVSecurity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 230194571641994E00099191 /* JVSecurity.h */; };
-		2301945A1641994F00099191 /* JVSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 230194591641994E00099191 /* JVSecurity.m */; };
 		230194621641994F00099191 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230194611641994F00099191 /* SenTestingKit.framework */; };
-		230194641641994F00099191 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230194631641994F00099191 /* UIKit.framework */; };
 		230194651641994F00099191 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230194521641994E00099191 /* Foundation.framework */; };
 		230194681641994F00099191 /* libJVSecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2301944F1641994E00099191 /* libJVSecurity.a */; };
 		2301946E1641994F00099191 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2301946C1641994F00099191 /* InfoPlist.strings */; };
 		230194711641994F00099191 /* JVSecurityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 230194701641994F00099191 /* JVSecurityTests.m */; };
+		23769F8216444A00000A2D5D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23769F8116444A00000A2D5D /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,14 +45,15 @@
 		230194521641994E00099191 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		230194561641994E00099191 /* JVSecurity-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JVSecurity-Prefix.pch"; sourceTree = "<group>"; };
 		230194571641994E00099191 /* JVSecurity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JVSecurity.h; sourceTree = "<group>"; };
-		230194591641994E00099191 /* JVSecurity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JVSecurity.m; sourceTree = "<group>"; };
 		230194601641994F00099191 /* JVSecurityTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JVSecurityTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		230194611641994F00099191 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		230194631641994F00099191 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		2301946B1641994F00099191 /* JVSecurityTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JVSecurityTests-Info.plist"; sourceTree = "<group>"; };
 		2301946D1641994F00099191 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2301946F1641994F00099191 /* JVSecurityTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JVSecurityTests.h; sourceTree = "<group>"; };
 		230194701641994F00099191 /* JVSecurityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JVSecurityTests.m; sourceTree = "<group>"; };
+		2301948016438E4C00099191 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = README.md; sourceTree = "<group>"; };
+		23769F7C16444972000A2D5D /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = SOURCE_ROOT; };
+		23769F8116444A00000A2D5D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23769F8216444A00000A2D5D /* UIKit.framework in Frameworks */,
 				230194531641994E00099191 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,7 +71,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				230194621641994F00099191 /* SenTestingKit.framework in Frameworks */,
-				230194641641994F00099191 /* UIKit.framework in Frameworks */,
 				230194651641994F00099191 /* Foundation.framework in Frameworks */,
 				230194681641994F00099191 /* libJVSecurity.a in Frameworks */,
 			);
@@ -82,6 +82,7 @@
 		230194441641994E00099191 = {
 			isa = PBXGroup;
 			children = (
+				2301947A16419B3800099191 /* Docs */,
 				230194541641994E00099191 /* JVSecurity */,
 				230194691641994F00099191 /* JVSecurityTests */,
 				230194511641994E00099191 /* Frameworks */,
@@ -101,9 +102,9 @@
 		230194511641994E00099191 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				23769F8116444A00000A2D5D /* UIKit.framework */,
 				230194521641994E00099191 /* Foundation.framework */,
 				230194611641994F00099191 /* SenTestingKit.framework */,
-				230194631641994F00099191 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,7 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				230194571641994E00099191 /* JVSecurity.h */,
-				230194591641994E00099191 /* JVSecurity.m */,
 				230194551641994E00099191 /* Supporting Files */,
 			);
 			path = JVSecurity;
@@ -143,6 +143,15 @@
 				2301946C1641994F00099191 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2301947A16419B3800099191 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				23769F7C16444972000A2D5D /* COPYING */,
+				2301948016438E4C00099191 /* README.md */,
+			);
+			path = Docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,7 +252,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2301945A1641994F00099191 /* JVSecurity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +405,7 @@
 				230194761641994F00099191 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		230194771641994F00099191 /* Build configuration list for PBXNativeTarget "JVSecurityTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +414,7 @@
 				230194791641994F00099191 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
