@@ -22,8 +22,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface JVSecurity : NSObject
-
 // Adds all the header files in the library
+#import <JVSecurity/JVKeychainWrapper.h>
 
 @end

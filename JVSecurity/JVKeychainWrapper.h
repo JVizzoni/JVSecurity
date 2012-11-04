@@ -24,4 +24,6 @@
 
 @interface JVKeychainWrapper : NSObject
 
++ (void)Test;
+
 @end

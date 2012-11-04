@@ -24,4 +24,9 @@
 
 @implementation JVKeychainWrapper
 
++ (void)Test
+{
+    NSLog(@"Hello from JVKecyhainWrapper");
+}
+
 @end
