@@ -15,6 +15,7 @@
 		2301946E1641994F00099191 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2301946C1641994F00099191 /* InfoPlist.strings */; };
 		230194711641994F00099191 /* JVSecurityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 230194701641994F00099191 /* JVSecurityTests.m */; };
 		23769F8216444A00000A2D5D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23769F8116444A00000A2D5D /* UIKit.framework */; };
+		23986E47164711D30061081D /* JVKeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 23986E46164711D30061081D /* JVKeychainWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		2301948016438E4C00099191 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = README.md; sourceTree = "<group>"; };
 		23769F7C16444972000A2D5D /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = SOURCE_ROOT; };
 		23769F8116444A00000A2D5D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		23986E45164711D30061081D /* JVKeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVKeychainWrapper.h; sourceTree = "<group>"; };
+		23986E46164711D30061081D /* JVKeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVKeychainWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				230194571641994E00099191 /* JVSecurity.h */,
+				23986E45164711D30061081D /* JVKeychainWrapper.h */,
+				23986E46164711D30061081D /* JVKeychainWrapper.m */,
 				230194551641994E00099191 /* Supporting Files */,
 			);
 			path = JVSecurity;
@@ -199,6 +204,7 @@
 		230194461641994E00099191 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JV;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "JV Assets, LLC.";
 			};
@@ -252,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23986E47164711D30061081D /* JVKeychainWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +313,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -326,7 +333,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
