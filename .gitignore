@@ -1,12 +1,13 @@
 #########################
-#gitignore file for Xcode4 / OS X Source projects
+# gitignore file for Xcode4 / OS X Source projects
 #
-# NB: if you are storing "built" products, this WILL NOT WORK,
+# This is a slightly modified version of the .gitignore found on Stackoverflow
+# For updates see: http://stackoverflow.com/questions/49478/git-ignore-file-for-xcode-projects
+#
+# NB: if you are storing "built" products, this WILL NOT 
 #   and you should use a different .gitignore (or none at all)
-# This file is for SOURCE projects, where there are many extra
-#   files that we want to exclude
 #
-# For updates, see: http://stackoverflow.com/questions/49478/git-ignore-file-for-xcode-projects
+# This file is for SOURCE projects, where there are many extra files that we want to exclude
 #########################
 
 #####
@@ -131,7 +132,7 @@ xcuserdata
 #
 #
 !xcshareddata
-.xcodeproj/ !*.xcodeproj/project.pbxproj
+.xcodeproj/!*.xcodeproj/project.pbxproj
 
 
 ####
@@ -142,8 +143,3 @@ xcuserdata
 # We're using source-control, so this is a "feature" that we do not want!
 
 *.moved-aside
-
-####
-# UNKNOWN: recommended by others, but I can't discover what these files are
-#
-# ...none. Everything is now explained.
