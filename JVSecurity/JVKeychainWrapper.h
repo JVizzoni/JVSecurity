@@ -19,11 +19,6 @@
 //
 //  You should have received a copy of the GNU General Public License
 //  along with JVSecurity.  If not, see <http://www.gnu.org/licenses/>.
-//
-//  Methods found in JVKeychainWrapper are derived in part, from Ray
-//  Wenderlich's tutorials on security and using Apple's Keychain API found at:
-//  <http://www.raywenderlich.com/6475/basic-security-in-ios-5-tutorial-part-1>
-//  <http://www.raywenderlich.com/6603/basic-security-in-ios-5-tutorial-part-2>
 
 #include <Foundation/Foundation.h>
 

@@ -23,17 +23,24 @@
 #import "JVKeychainWrapperTests.h"
 #import "JVKeychainWrapper.h"
 
+@interface JVKeychainWrapperTests ()
+@property (nonatomic, strong) JVKeychainWrapper *keychainWrapper;
+@end
+
 @implementation JVKeychainWrapperTests
 
-#define kAccount @"Account"
-#define kId @"PasswordIdentifier"
-#define PASSWORD @"Password"
+@synthesize keychainWrapper = _keychainWrapper;
+
+#define kAccount @"UserName"
+#define kService @"APP_ID"
+#define kPassword @"Password"
 
 - (void)setUp
 {
     [super setUp];
     
     // Set-up code here.
+    self.keychainWrapper = [[JVKeychainWrapper alloc] initWithAccountIdentifier:kAccount forService:kService];
 }
 
 - (void)tearDown
@@ -44,8 +51,22 @@
 }
 
 /*
- Keychain needs an application target to run on for the tests to work =(
+ Keychain needs an application target to run on for the tests to run properly. The only way I've been able to run these tests is when this library is included as a submodule in another existing project that is using the library.
+ 
+ IF ANYONE KNOWS A WAY AROUND THIS I'M ALL FOR SUGGESTIONS!
+ 
+ For now, I've disabled these tests in the scheme.
  */
+
+- (void)testAddItemToKeychain
+{
+    // a bad password but just testing this function so it doesn't matter
+    NSString *password = kPassword;
+    NSData *passwordData = [password dataUsingEncoding:NSUTF8StringEncoding];
+    
+    BOOL success = [self.keychainWrapper setPasswordData:passwordData];
+    STAssertTrue(success, @"Failed to create the password");
+}
 
 /*
 - (void)testSearchDictionaryForAccountWithIdentifier
