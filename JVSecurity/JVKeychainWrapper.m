@@ -93,6 +93,9 @@
         // item found so update it
         NSMutableDictionary *searchDictionary = [self.genericPasswordQuery mutableCopy];
         
+        // must remove the item class because it cannot be updated once set
+        [keychainItem removeObjectForKey:(__bridge id)(kSecClass)];
+        
         // Attempt to update value
         status = SecItemUpdate((__bridge CFDictionaryRef)(searchDictionary),
                                (__bridge CFDictionaryRef)(keychainItem));

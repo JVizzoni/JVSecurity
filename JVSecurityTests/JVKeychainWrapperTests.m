@@ -33,7 +33,6 @@
 
 #define kAccount @"UserName"
 #define kService @"APP_ID"
-#define kPassword @"Password"
 
 - (void)setUp
 {
@@ -41,6 +40,9 @@
     
     // Set-up code here.
     self.keychainWrapper = [[JVKeychainWrapper alloc] initWithAccountIdentifier:kAccount forService:kService];
+    
+    // delete any existing keychain data that may exist for this account so the tests have a fresh start
+    SecItemDelete((__bridge CFDictionaryRef)self.keychainWrapper.genericPasswordQuery);
 }
 
 - (void)tearDown
@@ -50,63 +52,25 @@
     [super tearDown];
 }
 
-/*
- Keychain needs an application target to run on for the tests to run properly. The only way I've been able to run these tests is when this library is included as a submodule in another existing project that is using the library.
- 
- IF ANYONE KNOWS A WAY AROUND THIS I'M ALL FOR SUGGESTIONS!
- 
- For now, I've disabled these tests in the scheme.
- */
-
-- (void)testAddItemToKeychain
+- (void)testKeychainWrapper
 {
-    // a bad password but just testing this function so it doesn't matter
-    NSString *password = kPassword;
-    NSData *passwordData = [password dataUsingEncoding:NSUTF8StringEncoding];
+    // bad passwords but just testing this function so it doesn't matter
+    NSString *password = @"Password";
+    NSString *newPassword = @"NewPassword";
     
-    BOOL success = [self.keychainWrapper setPasswordData:passwordData];
-    STAssertTrue(success, @"Failed to create the password");
+    // Attempt to add the password to the keychain
+    STAssertTrue([self.keychainWrapper setPasswordData:[password dataUsingEncoding:NSUTF8StringEncoding]], @"Failed to create the password");
+    
+    // compare the keychain value to the password
+    STAssertTrue([self.keychainWrapper compareKeychainValueWithData:[password dataUsingEncoding:NSUTF8StringEncoding]], @"Passwords did not match!");
+    STAssertFalse([self.keychainWrapper compareKeychainValueWithData:[newPassword dataUsingEncoding:NSUTF8StringEncoding]], @"Passwords matched when they shouldn't have");
+    
+    // Attempt to update the password to the new password
+    STAssertTrue([self.keychainWrapper setPasswordData:[newPassword dataUsingEncoding:NSUTF8StringEncoding]], @"Failed to update the password");
+    
+    // compare the passwords again
+    STAssertTrue([self.keychainWrapper compareKeychainValueWithData:[newPassword dataUsingEncoding:NSUTF8StringEncoding]], @"Passwords did not match!");
+    STAssertFalse([self.keychainWrapper compareKeychainValueWithData:[password dataUsingEncoding:NSUTF8StringEncoding]], @"Passwords matched when they shouldn't have");
 }
 
-/*
-- (void)testSearchDictionaryForAccountWithIdentifier
-{
-    NSDictionary *searchDictionary = [JVKeychainWrapper searchDictionaryForService:kAccount withIdentifer:kId];
-    
-    STAssertNotNil(searchDictionary, @"A NULL dictionary was returned");
-    STAssertEquals([searchDictionary objectForKey:(__bridge id)kSecAttrService], kAccount, @"The account was not properly set inside the search dictionary");
-    STAssertEquals([searchDictionary objectForKey:(__bridge id)kSecAttrAccount], kId, @"The identifier was not properly set inside the search dictionary");
-}
-
-- (void)testCreateKeychainValue
-{
-    NSDictionary *searchDictionary = [JVKeychainWrapper searchDictionaryForService:kAccount withIdentifer:kId];
-    
-    STAssertTrue([JVKeychainWrapper createKeychainValue:PASSWORD usingDictionary:searchDictionary], @"Failed to store a password");
-    
-    // try adding the password again - it should just update the value and return true
-    STAssertTrue([JVKeychainWrapper createKeychainValue:PASSWORD usingDictionary:searchDictionary], @"Failed to update the stored password");
-}
-
-//- (void)testCompareKeychainValueWithAttributesWithData
-//{
-//    // test that compareKeychainValueWithAttributes:withData: returns true when asked to compare a password with what's stored
-//    NSDictionary *searchDictionary = [JVKeychainWrapper searchDictionaryForService:kAccount withIdentifer:kId];
-//    NSData *passwordData = [PASSWORD dataUsingEncoding:NSUTF8StringEncoding];
-//    STAssertTrue([JVKeychainWrapper compareKeychainValueWithAttributes:searchDictionary withData:passwordData], @"Password's did not match");
-//    
-//    NSString *incorrectPassword = @"WrongPassword";
-//    NSData *incorrectPasswordData = [incorrectPassword dataUsingEncoding:NSUTF8StringEncoding];
-//    STAssertFalse([JVKeychainWrapper compareKeychainValueWithAttributes:searchDictionary withData:incorrectPasswordData], @"Password's should not match");
-//    
-//}
-
-- (void)testDeleteKeychainValue
-{
-    NSDictionary *searchDictionary = [JVKeychainWrapper searchDictionaryForService:kAccount withIdentifer:kId];
-    
-    // Assuming other tests have already added the entry into the keychain by the time this test runs
-    STAssertTrue([JVKeychainWrapper deleteItemFromKeychainWithAttributes:searchDictionary], @"Failed to delete entry in keychain");
-}
-*/
 @end

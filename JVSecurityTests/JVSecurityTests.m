@@ -38,9 +38,9 @@
     [super tearDown];
 }
 
-- (void)testExample
-{
-    STFail(@"Unit tests are not implemented yet in JVSecurityTests");
-}
+//- (void)testExample
+//{
+//    STFail(@"Unit tests are not implemented yet in JVSecurityTests");
+//}
 
 @end
