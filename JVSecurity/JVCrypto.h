@@ -50,7 +50,24 @@
  @param password The password being hashed
  @param salt Salt to use in the hashing algorithm
  @return A key with the specified length
- @discussion A SHA1 hashing algorithm to generate a key with a specified size. This is a purposely slow hashing algorithm which helps combat brute force attacks.
+ @discussion Generates a key with the specified size. This is uses th PBKDF2 slow hashing algorithm which helps combat brute force attacks.
+ 
+    Acceptable values for size are:
+         kCCKeySizeAES128          = 16,
+         kCCKeySizeAES192          = 24,
+         kCCKeySizeAES256          = 32,
+         kCCKeySizeDES             = 8,
+         kCCKeySize3DES            = 24,
+         kCCKeySizeMinCAST         = 5,
+         kCCKeySizeMaxCAST         = 16,
+         kCCKeySizeMinRC4          = 1,
+         kCCKeySizeMaxRC4          = 512,
+         kCCKeySizeMinRC2          = 1,
+         kCCKeySizeMaxRC2          = 128,
+         kCCKeySizeMinBlowfish     = 8,
+         kCCKeySizeMaxBlowfish     = 56,
+ 
+    These values are for reference only. Check CommonCryptor.h for the available enum values.
  */
 + (NSData *)keyWithSize:(NSUInteger)size forPassword:(NSString *)password usingSalt:(NSData *)salt;
 
