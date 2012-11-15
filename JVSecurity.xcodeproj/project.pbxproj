@@ -13,11 +13,12 @@
 		230194651641994F00099191 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230194521641994E00099191 /* Foundation.framework */; };
 		230194681641994F00099191 /* libJVSecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2301944F1641994E00099191 /* libJVSecurity.a */; };
 		2301946E1641994F00099191 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2301946C1641994F00099191 /* InfoPlist.strings */; };
-		230194711641994F00099191 /* JVSecurityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 230194701641994F00099191 /* JVSecurityTests.m */; };
 		233902DB164C716A004D7CA2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233902DA164C716A004D7CA2 /* Security.framework */; };
 		233902DC164C7C03004D7CA2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233902DA164C716A004D7CA2 /* Security.framework */; };
+		235A0E70165470DB009DC740 /* JVCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A0E6F165470DB009DC740 /* JVCrypto.m */; };
 		23986E47164711D30061081D /* JVKeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 23986E46164711D30061081D /* JVKeychainWrapper.m */; };
 		23AA684D164DEB7A009D40F4 /* JVKeychainWrapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AA684B164DEB7A009D40F4 /* JVKeychainWrapperTests.m */; };
+		23ADE16F16556940006ED12F /* JVCryptoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23ADE16E16556940006ED12F /* JVCryptoTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,15 +53,17 @@
 		230194611641994F00099191 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		2301946B1641994F00099191 /* JVSecurityTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JVSecurityTests-Info.plist"; sourceTree = "<group>"; };
 		2301946D1641994F00099191 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2301946F1641994F00099191 /* JVSecurityTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JVSecurityTests.h; sourceTree = "<group>"; };
-		230194701641994F00099191 /* JVSecurityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JVSecurityTests.m; sourceTree = "<group>"; };
 		2301948016438E4C00099191 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; path = README.md; sourceTree = "<group>"; };
 		233902DA164C716A004D7CA2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		235A0E6E165470DB009DC740 /* JVCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVCrypto.h; sourceTree = "<group>"; };
+		235A0E6F165470DB009DC740 /* JVCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVCrypto.m; sourceTree = "<group>"; };
 		23769F7C16444972000A2D5D /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = SOURCE_ROOT; };
 		23986E45164711D30061081D /* JVKeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVKeychainWrapper.h; sourceTree = "<group>"; };
 		23986E46164711D30061081D /* JVKeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVKeychainWrapper.m; sourceTree = "<group>"; };
 		23AA684B164DEB7A009D40F4 /* JVKeychainWrapperTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVKeychainWrapperTests.m; sourceTree = "<group>"; };
 		23AA684C164DEB7A009D40F4 /* JVKeychainWrapperTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVKeychainWrapperTests.h; sourceTree = "<group>"; };
+		23ADE16D16556940006ED12F /* JVCryptoTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVCryptoTests.h; sourceTree = "<group>"; };
+		23ADE16E16556940006ED12F /* JVCryptoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVCryptoTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				230194571641994E00099191 /* JVSecurity.h */,
+				235A0E6E165470DB009DC740 /* JVCrypto.h */,
+				235A0E6F165470DB009DC740 /* JVCrypto.m */,
 				23986E45164711D30061081D /* JVKeychainWrapper.h */,
 				23986E46164711D30061081D /* JVKeychainWrapper.m */,
 				230194551641994E00099191 /* Supporting Files */,
@@ -139,8 +144,8 @@
 		230194691641994F00099191 /* JVSecurityTests */ = {
 			isa = PBXGroup;
 			children = (
-				2301946F1641994F00099191 /* JVSecurityTests.h */,
-				230194701641994F00099191 /* JVSecurityTests.m */,
+				23ADE16D16556940006ED12F /* JVCryptoTests.h */,
+				23ADE16E16556940006ED12F /* JVCryptoTests.m */,
 				23AA684C164DEB7A009D40F4 /* JVKeychainWrapperTests.h */,
 				23AA684B164DEB7A009D40F4 /* JVKeychainWrapperTests.m */,
 				2301946A1641994F00099191 /* Supporting Files */,
@@ -266,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23986E47164711D30061081D /* JVKeychainWrapper.m in Sources */,
+				235A0E70165470DB009DC740 /* JVCrypto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				230194711641994F00099191 /* JVSecurityTests.m in Sources */,
 				23AA684D164DEB7A009D40F4 /* JVKeychainWrapperTests.m in Sources */,
+				23ADE16F16556940006ED12F /* JVCryptoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +359,10 @@
 				DSTROOT = /tmp/JVSecurity.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JVSecurity/JVSecurity-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
@@ -366,6 +376,10 @@
 				DSTROOT = /tmp/JVSecurity.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JVSecurity/JVSecurity-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";

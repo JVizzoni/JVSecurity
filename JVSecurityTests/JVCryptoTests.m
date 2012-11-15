@@ -1,8 +1,8 @@
 //
-//  JVSecurityTests.m
-//  JVSecurityTests
+//  JVCryptoTests.m
+//  JVSecurity
 //
-//  Created by Jake Vizzoni on 10/31/12.
+//  Created by Jake Vizzoni on 11/8/12.
 //  Copyright (c) 2012 JV Assets, LLC. All rights reserved.
 //
 //  This file is part of JVSecurity.
@@ -20,9 +20,11 @@
 //  You should have received a copy of the GNU General Public License
 //  along with JVSecurity.  If not, see <http://www.gnu.org/licenses/>.
 
-#import "JVSecurityTests.h"
+#import "JVCryptoTests.h"
+#import "JVCrypto.h"
+#import <CommonCrypto/CommonCrypto.h>
 
-@implementation JVSecurityTests
+@implementation JVCryptoTests
 
 - (void)setUp
 {
@@ -38,9 +40,20 @@
     [super tearDown];
 }
 
-//- (void)testExample
-//{
-//    STFail(@"Unit tests are not implemented yet in JVSecurityTests");
-//}
+- (void)testRandomDataOfLength
+{
+    STAssertNotNil([JVCrypto randomDataOfLength:8], @"Could not generate random data, returned nil.");
+}
+
+- (void)testKeyWithSize
+{
+    // test generating a AES128 key
+    NSUInteger size = kCCKeySizeAES128;
+    NSString *password = @"Passw0rd!";
+    NSData *salt = [JVCrypto randomDataOfLength:8];
+    
+    NSData *key = [JVCrypto keyWithSize:size forPassword:password usingSalt:salt];
+    STAssertNotNil(key, @"Unable to generate key");
+}
 
 @end

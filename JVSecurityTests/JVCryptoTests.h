@@ -1,8 +1,8 @@
 //
-//  JVSecurityTests.h
-//  JVSecurityTests
+//  JVCryptoTests.h
+//  JVSecurity
 //
-//  Created by Jake Vizzoni on 10/31/12.
+//  Created by Jake Vizzoni on 11/8/12.
 //  Copyright (c) 2012 JV Assets, LLC. All rights reserved.
 //
 //  This file is part of JVSecurity.
@@ -22,6 +22,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface JVSecurityTests : SenTestCase
+@interface JVCryptoTests : SenTestCase
 
 @end

@@ -35,22 +35,31 @@
 /* A password query is used to identify the keychain item you want to manipulate. */
 @property (nonatomic, strong) NSMutableDictionary *genericPasswordQuery;
 
-/* Return a configured JVKeychainWrapper item with a configured generic password query setup
+/*
+ @function initWithAccountIdentifier:forService:
+ @abstract Initiializes a JVKeychainWrapper object for storing and comparing keychain values
  @param identifier is a the account that you want the keychain data for. For example, an account: "UserName"
  @param service is the accessing company or application ID. For example. com.yourApp.developer or the bundle ID
- @return a JVKeychainWrapper used to write/read from the keychain for a specific identifier/service
+ @return JVKeychainWrapper item
+ @discussin Initializer that returns a JVKeychainWrapper item with a configured generic password query. Specify the account identifier and service that the keychain item is stored under. The other methods allow for access/modification of this specific item.
  */
 - (id)initWithAccountIdentifier:(NSString *)identifier forService:(NSString *)service;
 
-/* Stores a (presumably) salted and hashed password data to the keychain, if the value already exists it's updated.
+/*
+ @function setPasswordData
+ @abstract Allows a user to store data into the keychain. The item is updated if it already exists.
  @param data is the salted & hashed password data
  @return a boolean value that says alerts the user if the write/update was a success
+ @discussion Although and NSData object may be used, the data should be key generated using hashing algoritms included in the Common Crytpo library. JVCrypto provides a wrapper for easy use of the CC library.
  */
 - (BOOL)setPasswordData:(NSData *)data;
 
-/* Searches the keychain for a key and compares it to the passed in value.
+/*
+ @function compareKeychainValueWithData
+ @abstract Compares the passed in value with the value stored in the keychain.
  @param dataToCompare is the NSData object to compare to the stored key
  @return a boolean value, YES if the two objects match, NO otherwise
+ @discussion This method does not return the data in the keychain on purpose. Although keychain operations are expensive, we do not want to allow the user to store the data in memory. Maybe that's a little paranoid but it's certainly safe.
  */
 - (BOOL)compareKeychainValueWithData:(NSData *)dataToCompare;
 

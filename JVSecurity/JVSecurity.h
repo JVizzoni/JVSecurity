@@ -24,5 +24,6 @@
 
 // Adds all the header files in the library
 #import <JVSecurity/JVKeychainWrapper.h>
+#import <JVSecurity/JVCrypto.h>
 
 @end
