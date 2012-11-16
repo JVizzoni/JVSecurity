@@ -13,6 +13,8 @@
 		230194651641994F00099191 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230194521641994E00099191 /* Foundation.framework */; };
 		230194681641994F00099191 /* libJVSecurity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2301944F1641994E00099191 /* libJVSecurity.a */; };
 		2301946E1641994F00099191 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2301946C1641994F00099191 /* InfoPlist.strings */; };
+		231730E61656C00F0085B796 /* JVCrypto.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 235A0E6E165470DB009DC740 /* JVCrypto.h */; };
+		231730E81656C0120085B796 /* JVKeychainWrapper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 23986E45164711D30061081D /* JVKeychainWrapper.h */; };
 		233902DB164C716A004D7CA2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233902DA164C716A004D7CA2 /* Security.framework */; };
 		233902DC164C7C03004D7CA2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233902DA164C716A004D7CA2 /* Security.framework */; };
 		235A0E70165470DB009DC740 /* JVCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A0E6F165470DB009DC740 /* JVCrypto.m */; };
@@ -39,6 +41,8 @@
 			dstSubfolderSpec = 16;
 			files = (
 				230194581641994E00099191 /* JVSecurity.h in CopyFiles */,
+				231730E61656C00F0085B796 /* JVCrypto.h in CopyFiles */,
+				231730E81656C0120085B796 /* JVKeychainWrapper.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
